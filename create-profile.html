@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment #1 – Register form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- HEADER-->
+    <a href="index.html"><img width="80px" src="images/lamp.png" alt="logo"></a><!-- I created that logo-->
+    <!-- END OF HEADER-->
+    <!-- BODY-->
+    <img src="images/multi-media_design_development.jpg" alt="top banner with a mobile phone" width="100%">
+    <h1>Welcome to Humber!!</h1>
+    <h4>
+        If you are a current or future student but don't have an account for this page, 
+        please fill the following information:
+    </h4>
+    <form action="form-submited.html" id="registration">
+        <p>
+            *Name:<input type="text" placeholder="Your Name" size="25" required>&nbsp;&nbsp;
+            Middle Name:<input type="text" placeholder="Your Middle Name if any" size="25">&nbsp;&nbsp;
+            *Family Name:<input type="text" placeholder="Your Family Name" size="50" required>
+        </p>
+        <p>
+            *E-mail:<input type="email" placeholder="somebody@example.com" size="50" required>
+        </p>
+        <p>
+            Current year of studies in Humber:
+            <select name="currentYear" id="currentYear">
+                <option value="" selected>Choose here</option>
+                <option value="year1">First year</option>
+                <option value="year2">Second year</option>
+                <option value="year3">Third year</option>
+                <option value="year4">Fourth year</option>
+            </select>
+        </p>
+        <p>Which Operating System is your favorite:</p>
+        <p>
+            &nbsp;&nbsp;<input type="radio" name="faboriteOS" value="mac">macOS<br>
+            &nbsp;&nbsp;<input type="radio" name="faboriteOS" value="windows">Microsoft Windows<br>
+            &nbsp;&nbsp;<input type="radio" name="faboriteOS" value="linux">Linux
+        </p>
+        <p>
+            Give us a little additional information about yourself:<br><br>
+            <textarea name="studentDescription" id="studentDes" cols="100" rows="10"></textarea>
+        </p>
+        <input type="submit">
+    </form>
+    <h4>
+        Already have an account?<br>
+        You can either got back to the <a href="index.html">Homepage</a> or check <a href="view-performance.html">your grades</a>.
+    </h4>
+    <p><small>here are other two inactive links: <a href="#" onclick="return false;">doesn't work</a> and <a href="#" onclick="return false;"> doesn't work either</a></small></p>
+    <!-- END OF BODY-->
+</body>
+</html>
